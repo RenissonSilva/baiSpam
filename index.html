@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script async type="text/javascript" src="popup.js"></script>
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,17 @@
     #pixText { color: #D9D9D9; font-weight: 600; }
     #pix { color: #fff; font-size: 18px; }
     #qrcode { width: 170px; border-radius: 30px; border-top: 5px solid #a98aff; border-left: 5px solid #a98aff; display: block; margin-left: auto; margin-right: auto;}
+    #btnChangeImages { background-color:#a98aff; border-radius:28px; border:1px solid #a98aff; display:inline-block; cursor:pointer; color:#ffffff; font-family:Arial; font-size:17px; padding:16px 31px; text-decoration:none; text-shadow:0px 1px 0px #a98aff; height: 50px; margin-top: 15px; }
+    #btnChangeImages:hover { background-color:#957be3; }
+    #btnChangeImages:active { position:relative; top:1px; }
+
 </style>
 <body>
-    <h4 id="appName">BaiSpam</h4>
+    <div style="display:flex; justify-content: space-between;">
+        <h4 id="appName">BaiSpam</h4>
+        <button id="btnChangeImages">Ativar modo Baiano</button>
+    </div>
+    
     <h4 id="doYouLike">Gostou do app?</h4>
     <h4 id="pixText">Considere fazer uma contribuição de qualquer valor para a seguinte chave pix:</h4>
     <h4 id="pix">85c626fa-232e-489e-bdb5-4c30592024be</h4>
